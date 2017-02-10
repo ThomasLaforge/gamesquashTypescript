@@ -1,16 +1,21 @@
 // Imports
     import { PlayerStatType } from './Gamesquash'
+    import { Coach } from './Coach'
+    import { Job } from './Job'
 // -------
 
-class Player {
+export class Player {
 
     private _pseudo: string;
+    private _energy: number;
     private _xp: number;
     private _strength: number;
     private _stamina: number;
     private _technique: number;
+    private _coach:Coach;
+    private _work:Job;
 
-	constructor(p = 'Invité-' + Date.now(), xp = 0, str = 0, sta = 0, tec = 0) {
+	constructor(p = 'Invité-' + Date.now(), xp = 0, str = 0, sta = 0, tec = 0, c:Coach = null) {
         this.pseudo = p;
         this.xp = xp;
         this.strength = str;
@@ -91,5 +96,3 @@ class Player {
 // ------------------
 
 }
-
-export {Player}
