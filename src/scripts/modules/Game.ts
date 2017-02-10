@@ -54,5 +54,4 @@ export class Game {
 	public set competitionManager(value: CompetitionManager) {
 		this._competitionManager = value;
 	}
-    
 }
