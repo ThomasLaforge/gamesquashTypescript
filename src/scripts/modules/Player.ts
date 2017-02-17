@@ -14,6 +14,7 @@ export class Player {
     private _technique: number;
     private _coach:Coach;
     private _work:Job;
+    private _money: number;
 
 	constructor(p = 'Invité-' + Date.now(), xp = 0, str = 0, sta = 0, tec = 0, c:Coach = null) {
         this.pseudo = p;
@@ -91,6 +92,38 @@ export class Player {
 
 	public set strength(value: number) {
 		this._strength = value;
+	}
+    
+	public get money(): number {
+		return this._money;
+	}
+
+	public set money(value: number) {
+		this._money = value;
+	}
+
+	public get coach(): Coach {
+		return this._coach;
+	}
+
+	public set coach(value: Coach) {
+		this._coach = value;
+	}
+
+	public get energy(): number {
+		return this._energy;
+	}
+
+	public set energy(value: number) {
+		this._energy = value;
+	}
+
+	public get work(): Job {
+		return this._work;
+	}
+
+	public set work(value: Job) {
+		this._work = value;
 	}
     
 // ------------------

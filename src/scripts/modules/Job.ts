@@ -1,3 +1,5 @@
+import {PlayerAptitudes} from './Gamesquash'
+
 export class Job {
     private _neededAptitude: PlayerAptitudes;
     private _salary: number;

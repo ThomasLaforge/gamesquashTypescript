@@ -5,6 +5,14 @@ export enum PlayerStatType {
     STAMINA
 }
 
+export interface PlayerAptitudes {
+    
+}
+
+export interface AptitudeCoachSchema {
+
+}
+
 export enum GameLevel {
     TUTO,
     JUNIOR,
@@ -31,4 +39,13 @@ export enum TrainingType {
     Reflex,
     BodyBuilding,
     Racket
+}
+
+export interface ScoreInterface {
+    games : Array<GameScoreInterface>
+}
+
+export interface GameScoreInterface {
+    p1 : number
+    p2 : number
 }

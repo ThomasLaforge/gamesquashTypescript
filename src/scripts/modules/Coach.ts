@@ -1,17 +1,18 @@
-import { Country } from './Gamesquash'
+import { Country, AptitudeCoachSchema } from './Gamesquash'
+import { PlayerCareer } from './PlayerCareer'
 
 export class Coach {
 
     private _name:string
-    private _playerCarrier: PlayerCarrier;
+    private _playerCareer: PlayerCareer;
     private _dateOfBirth: number;
     private _aptitude: AptitudeCoachSchema;
     private _cost: number;
     private _nationality: Country;
 
 
-	constructor(playerCarrier: PlayerCarrier, dateOfBirth: number, aptitude: AptitudeCoachSchema, cost: number, nationality: Country = Country.FRANCE) {
-		this._playerCarrier = playerCarrier;
+	constructor(playerCareer: PlayerCareer, dateOfBirth: number, aptitude: AptitudeCoachSchema, cost: number, nationality: Country = Country.FRANCE) {
+		this._playerCareer = playerCareer;
 		this._dateOfBirth = dateOfBirth;
 		this._aptitude = aptitude;
 		this._cost = cost;
@@ -19,12 +20,12 @@ export class Coach {
 	}
     
 
-	public get playerCarrier(): PlayerCarrier {
-		return this._playerCarrier;
+	public get playerCareer(): PlayerCareer {
+		return this._playerCareer;
 	}
 
-	public set playerCarrier(value: PlayerCarrier) {
-		this._playerCarrier = value;
+	public set playerCareer(value: PlayerCareer) {
+		this._playerCareer = value;
 	}
 
 	public get dateOfBirth(): number {
