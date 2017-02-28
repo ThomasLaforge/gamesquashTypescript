@@ -6,14 +6,12 @@ export class SparringPartner {
     private _firstLinkDate: number;
     private _trainingMatchTogether: number;
 
-
 	constructor(player: Player, firstLinkDate: number, trainingMatchTogether: number) {
 		this._player = player;
 		this._firstLinkDate = firstLinkDate;
 		this._trainingMatchTogether = trainingMatchTogether;
 	}
     
-
 	public get player(): Player {
 		return this._player;
 	}

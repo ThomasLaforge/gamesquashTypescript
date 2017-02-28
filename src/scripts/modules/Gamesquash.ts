@@ -41,6 +41,10 @@ export enum TrainingType {
     Racket
 }
 
+/**
+ * Score
+ */
+
 export interface ScoreInterface {
     games : Array<GameScoreInterface>
 }
@@ -48,4 +52,22 @@ export interface ScoreInterface {
 export interface GameScoreInterface {
     p1 : number
     p2 : number
+}
+
+
+/**
+ * Shop
+ */
+
+
+/**
+ * Job
+ */
+export interface JobInterface {
+    neededAptitude: PlayerAptitudes;
+    salary: number;
+    energyCost: number;
+    duration: number;
+    cost: number;
+    aptitudesGain: PlayerAptitudes;
 }
